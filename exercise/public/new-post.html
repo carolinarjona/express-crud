@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=initial-scale=1.0">
+  <script src="./javascripts/scripts.js" defer></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <title>Poseidon Forum</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Poseidon Forum</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="all-posts.html">All post</a></li>
+          <li><a href="new-post.html">Write a new post</a></li>
+        </ul>
+      </nav>
+  <div class="creation-post">
+    <h2>Create a new post</h2>
+    <form action="/posts/new-post" method="POST">
+      <label>Title</label>
+      <input type="text" placeholder="Post title" name="title" required>
+      <label>Content</label>
+      <textarea name="content" id="content" placeholder="Post content" required></textarea>
+      <label>Author</label>
+      <input type="text" placeholder="Your nick" name="createdBy" required>
+      <input type="submit" value="Send!" onclick="redirect()">
+    </form>
+  </div>
+
+</body>
+
+</html>
